@@ -6,113 +6,63 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-body{
-    background: black;
-
-}
-
-section{
+.container{
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
     min-height: 100vh;
-    padding: 0 100px;
-}
-section .contentBx{
-    position: relative;
-    max-width: 600px;
-    z-index: 1000;
-}
-section .contentBx h2{
-    font-size: 60px;
-    color: white;
-    text-transform: uppercase;
-}
-section .contentBx p{
-    font-size: 18 px;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: 0.5s;
+    padding: 20px;
 
 }
-section .contentBx img{
-    width: 450px;
+.container .content img{
+    max-width: 100%;
+    display: block;
 }
-section .contentBx a{
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.container .content{
     position: relative;
-    margin-top: 10px;
+    max-width:800px;
+}
+h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+} 
+a{
+    position: relative;
+    padding: 5px 20px;
     display: inline-block;
-    background: dimgray;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding: 15px 35px;
+    margin-top: 20px;
     text-decoration: none;
-    border-radius: 15px;
+    color: #fff;
+    background: #111;
+
 }
 
-.newsletter{
+#popup{
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    padding: 60px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: white;
-    z-index: 10000;
-    box-shadow: 0 0 0 100vh rgba(34, 34, 33, 0.777);
     visibility: hidden;
-    opacity: 0;
+    opacity:0 ; 
     transition: 0.5s;
-    border-radius: 10px;
 }
-.newsletter.active{
+#popup.active{
     visibility: visible;
     opacity: 1;
+    top: 50%;
+    transition: 0.5s;
 }
-.newsletter h2{
-    font-size: 48px;
-    color: black;
-}
-.newsletter p{
-    font-size: 20px;
-    color: darkgray;
-}
-.newsletter .inputbox{
-    margin-top: 20px;
-}
-.newsletter .inputbox input{
-    padding: 10px;
-    outline: none;
-    width: 300px;
-    font-size: 18px;
-    border: 1px solid #999;
-}
-.newsletter .inputbox input[type="submit"]{
-    padding: 10px;
-    outline: none;
-    width: 140px;
-    color: white;
-    background: black;
-    border: 1px solid grey;
-    letter-spacing: 2px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-.newsletter .close{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-.row {
-    position: relative;
-    padding: 100px;
-    background: white;
-    margin-top: 150px ;
-    border-radius: 10px;
-    margin-bottom: 150px;
-}
-
-
