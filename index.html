@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="modal.css">
+    </head>
+    <body>
+        <section>
+            <div class="contentBx">
+                <h2> Registration</h2>
+                <p>ldsycgkxumzkdfhamlfusfhvhcvfhfloremloremlorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio aut laborum vitae dolorum tenetur, officia maiores, cupiditate alias omnis eos numquam officiis modi ab deleniti reiciendis blanditiis temporibus quas ut! </p>
+                <img src="portrait-young-woman-taking-pictures-holiday.jpg" alt="">
+                <a href="#" onclick="toggle();">Can't wait?</a>
+            </div>
+        </section>
+        <div class="newsletter">
+            <h2>Registration Form </h2>
+            <p> Kindly enter your details </p>
+            <div class="inputbox">
+                <form>
+                    <input type="email" name="" required="" placeholder="Enter Email Address">
+                   
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <img src="close.png" class="close" onclick="toggle();">
+        </div>
+        <!--Change the yr acc to present time, if written in 2023 then yr should be 2024-->
+        <script type="text/javascript">
+
+            function toggle(){
+                var newsletter = document.querySelector('.newsletter');
+                newsletter.classList.toggle('active')
+            }
+
+        </script>
+    </body>
+</html>
